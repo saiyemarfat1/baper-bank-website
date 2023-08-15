@@ -15,7 +15,7 @@ console.log(email, passowrd);
 // DANGER: DO NOT VERIFY email passowrd on the client site
 // step 4: verify email and password
 if(email === 'baperid@gmail.com'&& passowrd === 'secret'){
-    windows.location.href = 'bank.html'
+    window.location.href = 'bank.html'
 }else{
     console.log('Invalid-user')
 }
