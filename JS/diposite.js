@@ -4,6 +4,12 @@ document.getElementById('btn-diposit').addEventListener('click', function () {
     const newtotalAmontString = totalDipusitAmont.value
     const newtotalAmont = parseFloat(newtotalAmontString)
 
+    totalDipusitAmont.value = '';
+    if (isNaN(newtotalAmont)) {
+        alert('Please Provide a valid number');
+        return;
+    }
+
     const totalAmountDiposit = document.getElementById('diposit-total')
     const newPreviusAmountAddedString = totalAmountDiposit.innerText
     const newPreviusAmountAdded = parseFloat(newPreviusAmountAddedString);
@@ -24,7 +30,7 @@ document.getElementById('btn-diposit').addEventListener('click', function () {
 
 
     //  step clear the deposit filed
-    totalDipusitAmont.value = '';
+    
 
 })
 
