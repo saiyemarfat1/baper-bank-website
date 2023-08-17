@@ -8,20 +8,27 @@ document.getElementById('btn-withdraw').addEventListener('click', function () {
     const prevousTotalElement = parseFloat(prevousTotalElementString)
 
 
-    const currentWithdrawTotal = prevousTotalElement + newWithdrawAmount;
-    withdrawTotalElement.innerText = currentWithdrawTotal
+
 
     const blanceTotalElement = document.getElementById('blance-total')
     const blanceTotalElementString = blanceTotalElement.innerText
     const blanceTotalElements = parseFloat(blanceTotalElementString)
 
+
+    withdrawField.value = '';
+
+    if (newWithdrawAmount > blanceTotalElements) {
+        alert('baper bank e etu taka nai')
+        return;
+    }
+
+    const currentWithdrawTotal = prevousTotalElement + newWithdrawAmount;
+    withdrawTotalElement.innerText = currentWithdrawTotal
+
     const totalBlanceNew = blanceTotalElements - newWithdrawAmount;
     blanceTotalElement.innerText = totalBlanceNew
 
 
-
-
-    withdrawField.value = '';
 
 
 })
