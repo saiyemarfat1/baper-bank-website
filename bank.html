@@ -19,15 +19,15 @@
             <div class="grid lg:grid-cols-3 w-9/12 mx-auto gap-5">
                 <div class="text-white p-10 bg-green-400 rounded-lg">
                     <h1 class="text-2xl">Deposit</h1>
-                    <h2 class="text-4xl">$00</h2>
+                    <h2 class="text-4xl">$<span id="diposit-total">00</span></h2>
                 </div>
                 <div class="text-white p-10 bg-amber-500 rounded-lg">
-                    <h1 class="text-2xl">withdraw</h1>
-                    <h2 class="text-4xl">$00</h2>
+                    <h1 class="text-2xl">Withdraw</h1>
+                    <h2 class="text-4xl">$<span id="withdraw-total">00</span></h2>
                 </div>
                 <div class="text-white p-10 bg-violet-500 rounded-lg">
                     <h1 class="text-2xl">Blacnce</h1>
-                    <h2 class="text-4xl">$1240</h2>
+                    <h2 class="text-4xl">$<span id="blance-total">1240</span></h2>
                 </div>
             </div>
         </section>
@@ -36,22 +36,22 @@
         <section class="mt-10 ">
             <div class="grid lg:grid-cols-2 w-9/12 mx-auto gap-5">
                 <!-- coulumn 1 -->
-                <div class="text-white p-10 bg-fuchsia-500 rounded-lg">
-                    <h1 class="text-2xl">Please Deposit</h1>
-                    <input class="px-2 py-1 w-9/12 block- mt-2 " type="email" name="" id="deposit-amount"
-                    placeholder="Amount you want to deposit">
+                <div class=" p-10 bg-fuchsia-500 rounded-lg">
+                    <h1 class="text-2xl text-white">Please Deposit</h1>
+                    <input class="px-2 py-1 w-9/12 block- mt-2 " type="text" name="" id="deposit-field"
+                        placeholder="Amount you want to deposit">
                     <div>
-                        <button id="deposit-submit "
+                        <button id="btn-diposit"
                             class="bg-amber-600 px-6 py-2 rounded-lg font-medium text-white mt-3 hover:bg-blue-500">Deposit</button>
                     </div>
                 </div>
                 <!-- coulmn 2 -->
-                <div class="text-white p-10 bg-sky-400 rounded-lg">
-                    <h1 class="text-2xl">Please Deposit</h1>
-                    <input class="px-2 py-1 w-9/12 block- mt-2 " type="email" name="" id="deposit-amount"
-                    placeholder="Amount you want to deposit">
+                <div class=" p-10 bg-sky-400 rounded-lg">
+                    <h1 class="text-2xl text-white">Please Withdraw</h1>
+                    <input id="withdraw-field" class="px-2 py-1 w-9/12 block- mt-2 " type="text" name="" id="deposit-amount"
+                        placeholder="Amount you want to deposit">
                     <div>
-                        <button id="deposit-submit "
+                        <button id="btn-withdraw"
                             class="bg-amber-600 px-6 py-2 rounded-lg font-medium text-white mt-3 hover:bg-blue-500">Deposit</button>
                     </div>
                 </div>
@@ -59,8 +59,9 @@
         </section>
     </main>
 
-    
 
+    <script src="JS/diposite.js"></script>
+    <script src="JS/withdraw.js"></script>
 </body>
 
 </html>
